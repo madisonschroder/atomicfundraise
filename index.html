@@ -1,1 +1,183 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclear Renaissance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, -apple-system, sans-serif; }
+
+        .hero {
+            min-height: 100vh;
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 1rem 0;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            margin-left: 1rem;
+        }
+
+        .programs {
+            padding: 6rem 2rem;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .programs h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .program-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div>
+            <i data-lucide="atom" style="width: 64px; height: 64px; color: #60a5fa; margin: 0 auto;"></i>
+            <h1>Power the Nuclear Renaissance</h1>
+            <p>Join a global movement of advocates championing clean, reliable nuclear energy for a sustainable future</p>
+            <div>
+                <a href="#" class="btn btn-primary">Get Involved</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="programs">
+        <div class="container">
+            <h2>Our Impact Programs</h2>
+            <div class="program-grid">
+                <div class="card">
+                    <i data-lucide="video" class="icon"></i>
+                    <h3>Creative SciComms</h3>
+                    <p>Simplifying energy policy and nuclear science through engaging videos and memes.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="heart" class="icon"></i>
+                    <h3>Nuclear Art</h3>
+                    <p>Celebrating nuclear energy through art exhibitions and creative events.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="users" class="icon"></i>
+                    <h3>Atomic Ambassadors</h3>
+                    <p>Training nuclear advocates with comprehensive communication skills.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="school" class="icon"></i>
+                    <h3>Atomic Horizons</h3>
+                    <p>Nuclear science education program inspiring future clean energy leaders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Join the Movement</h2>
+        <p>Together, we can build a future powered by clean, reliable nuclear energy.</p>
+        <a href="#" class="btn btn-primary">Become an Advocate Today</a>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
